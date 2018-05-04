@@ -1,4 +1,4 @@
-install.packages("tm")
+#install.packages("tm")
 library(tm)
 files <- list.files(pattern = "pdf$")
 files1 <- list.files(pattern = "PDF$")
