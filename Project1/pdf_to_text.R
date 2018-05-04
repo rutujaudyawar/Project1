@@ -1,7 +1,7 @@
 #install.packages("tm")
 library(tm)
-files <- list.files(pattern = "pdf$")
-files1 <- list.files(pattern = "PDF$")
+files <- list.files(pattern = ("pdf$" "PDF$"))
+#files1 <- list.files(pattern = "PDF$")
 Rpdf <- readPDF(control = list(text = "-layout"))
 opinions <- Corpus(URISource(files), #Uniform Resource Identifier#
                    readerControl = list(reader = Rpdf))
